@@ -262,7 +262,7 @@
     function endScreen() {
         if (levelHelper.isFinished || levelHelper.isMobile) {
             alert("Good job, The game is over\n\nThanks you for playing!");
-            document.location.href = "https://plus.google.com/u/0/114532615363095107351/posts";
+            document.location.href = "https://daohailong.github.io/Final_ComputerGraphic/";
         } else {
             // Remove all childrens.
             for (var i = 0, l = scene.children.length; i < l; i++) {
