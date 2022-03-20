@@ -5,3 +5,4 @@
    + Dang Thai Son BA9-053
    + Dao Hai Long BA9-041
    + Nguyen Minh Hieu BA9-020
+## Links demo game for your team: https://daohailong.github.io/Final_ComputerGraphic/
