@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+
+#canvasContainer {
+	position: relative;
+}
+
+/* JOYPAD */
+#joypad {
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	width: 145px;
+}
+
+#joypad .top {
+	text-align: center;
+	width: inherit;
+}
+
+#joypad .bottom {
+	width: inherit;
+}
+#keyup{
+	position: absolute;
+    top:-30px;
+	left: 28px ;
+}

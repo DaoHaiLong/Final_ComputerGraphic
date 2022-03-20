@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Maze Puzzle 3D Group5</title>
+        <meta name="description" content="Maze Puzzle 3D for WebGL with Three.js" />
+        <meta name="author" content="Group5" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" media="screen" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <img style="display:none" src="./assets/images/preview_maze_puzzle.png" alt="Img preview_maze_puzzle" />
+        <div id="canvasContainer">
+            <div id="joypad">
+                <div class="top">
+                    <span class="joykey" id="keyup"><img src="./assets/images/pad/Pg_up.png" /></span>
+                </div>
+                <div class="bottom">
+                    <span class="joykey" id="keyleft"><img src="./assets/images/pad/to_left.png" /></span>
+                    <span class="joykey" id="keydown"><img src="./assets/images/pad/up_down.png" /></span>
+                    <span class="joykey" id="keyright"><img src="./assets/images/pad/to_right.png" /></span>
+                </div>
+            </div>
+        </div>
+        <audio id="bumpSound">
+            <source src="./assets/sound/bat.ogg" />
+            <source src="./assets/sound/bat.mp3" />
+        </audio>
+        <script src="./assets/js/three.min.js"></script>
+        <script src="./assets/js/maze3d.js"></script>
+        <script src="./assets/js/Group5.Input.js"></script>
+        <script src="./assets/js/Group5.Minimap.js"></script>
+        <script src="./assets/js/Group5.GameHelper.js"></script>
+        
+    </body>
+</html>
