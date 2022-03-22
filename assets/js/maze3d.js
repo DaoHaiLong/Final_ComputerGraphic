@@ -151,7 +151,7 @@
                     cameraHelper.origin.position.mapZ = 0;
                 }
 
-                miniMap.draw(x, y, map[y][x]);
+                miniMap.drawPosition(x, y, map[y][x]);
             }
         }
     }
@@ -223,7 +223,7 @@
             camera.rotation.y = rotation;
             camera.position.x = position.x;
             camera.position.z = position.z;
-            miniMap.update({
+            miniMap.updatePosition({
                 x: newpositionX,
                 y: newpositionY
             });
@@ -233,7 +233,7 @@
         }
     }
 
-    function update() {
+    function KeyboardCameraSupport() {
         if (keyboardInput.keys.up) {
             moveCamera("up");
         } else if (keyboardInput.keys.down) {
@@ -268,7 +268,7 @@
 
     function mainLoop() {
         if (running) {
-            update();
+            KeyboardCameraSupport();
             draw();
             window.requestAnimationFrame(mainLoop, renderer.domElement);
         } else {

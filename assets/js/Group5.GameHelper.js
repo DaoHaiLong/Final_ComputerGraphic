@@ -3,8 +3,8 @@ Group5.GameHelper = Group5.GameHelper || {};
 
 // Camera man helper 
 Group5.GameHelper.CameraHelper = function(camera) {
-    this.translation = 5;
-    this.rotation = 0.035;
+    this.translation = 3;
+    this.rotation = 0.025;
     this.origin = {
         position: {
             x: 0,

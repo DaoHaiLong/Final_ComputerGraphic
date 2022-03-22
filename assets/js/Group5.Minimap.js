@@ -1,3 +1,4 @@
+
 var Group5 = window.Group5 || {};
 Group5.Gui = Group5.Gui || {};
 
@@ -36,7 +37,7 @@ Group5.Gui.MiniMap = function(width, height, parent) {
         domElement.appendChild(this.miniMap);
     };
 
-    this.draw = function(x, y, id) {
+    this.drawPosition = function(x, y, id) {
         if (id == 1) {
             this.ctx.fillStyle = "gray";
         } else if (id == 'D') {
@@ -56,7 +57,7 @@ Group5.Gui.MiniMap = function(width, height, parent) {
         this.ctx.fillRect(x * 5, y * 5, 5, 5);
     };
 
-    this.update = function(newPlayerPosition) {
+    this.updatePosition = function(newPlayerPosition) {
         this.ctx.fillStyle = "black";
         this.ctx.fillRect(this.playerPosition.x * this.blockSize.width, this.playerPosition.y * this.blockSize.height, this.blockSize.width, this.blockSize.height);
         this.ctx.fillStyle = "red";
